@@ -18,10 +18,13 @@ aws configure set default.region $REGION
 
 aws ec2 attach-network-interface --network-interface-id $ENI_ID --instance-id $INSTANCE_ID --device-index 1
 
-cd /tmp && \
-  curl -kO https://www.johnvansickle.com/ffmpeg/builds/ffmpeg-git-64bit-static.tar.xz && \
-  tar Jxf ffmpeg-git-64bit-static.tar.xz && \
-  cp -av ffmpeg*/{ff*,qt*} /usr/local/bin
+cd /usr/local/bin && \
+  yum -y install yasm && \
+  wget https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2 && \
+  tar -vxjf ./ffmpeg-snapshot.tar.bz2 &&
+  rm ./ffmpeg-snapshot.tar.bz2 &&
+  cd ffmpeg && ./configure && make && make install
+  
 
 cd /tmp && \
   git clone https://github.com/arut/nginx-rtmp-module

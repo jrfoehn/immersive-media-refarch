@@ -342,7 +342,7 @@ Resources:
 
                 yum -y install git
 
-                cd /root && git clone https://github.com/awslabs/immersive-media-refarch.git
+                cd /root && git clone https://github.com/jrfoehn/immersive-media-refarch.git
 
                 REGION=${AWS::Region} INGRESSBUCKET=${transcodingIngressBucket} CLOUDWATCHLOGSGROUP=${cloudWatchLogsGroup}
                 ENI_ID=${backupOriginElasticNetworkInterface} ALLOCATION_ID=${backupOriginElasticIp.AllocationId}
@@ -377,7 +377,7 @@ Resources:
 
                 yum -y install git
 
-                cd /root && git clone https://github.com/awslabs/immersive-media-refarch.git
+                cd /root && git clone https://github.com/jrfoehn/immersive-media-refarch.git
 
                 REGION=${AWS::Region} INGRESSBUCKET=${transcodingIngressBucket} CLOUDWATCHLOGSGROUP=${cloudWatchLogsGroup}
                 ENI_ID=${backupOriginElasticNetworkInterface} ALLOCATION_ID=${backupOriginElasticIp.AllocationId}
@@ -557,7 +557,7 @@ Resources:
 
                 yum -y install git
 
-                cd /root && git clone https://github.com/awslabs/immersive-media-refarch.git
+                cd /root && git clone https://github.com/jrfoehn/immersive-media-refarch.git
 
                 REGION=${AWS::Region} APPLICATIONLOADBALANCERTARGETGROUP=${applicationLoadBalancerTargetGroup}
                 CLOUDWATCHLOGSGROUP=${cloudWatchLogsGroup} EGRESSBUCKETWEBSITEURL=${transcodingEgressBucket.WebsiteURL}
@@ -597,7 +597,7 @@ Resources:
 
                 yum -y install git
 
-                cd /root && git clone https://github.com/awslabs/immersive-media-refarch.git
+                cd /root && git clone https://github.com/jrfoehn/immersive-media-refarch.git
 
                 REGION=${AWS::Region} APPLICATIONLOADBALANCERTARGETGROUP=${applicationLoadBalancerTargetGroup}
                 CLOUDWATCHLOGSGROUP=${cloudWatchLogsGroup} EGRESSBUCKETWEBSITEURL=${transcodingEgressBucket.WebsiteURL}
@@ -846,7 +846,7 @@ Resources:
 
                 yum -y install git
 
-                cd /root && git clone https://github.com/awslabs/immersive-media-refarch.git
+                cd /root && git clone https://github.com/jrfoehn/immersive-media-refarch.git
 
                 REGION=${AWS::Region} INGRESSBUCKET=${transcodingIngressBucket} CLOUDWATCHLOGSGROUP=${cloudWatchLogsGroup}
                 ENI_ID=${primaryOriginElasticNetworkInterface} ALLOCATION_ID=${primaryOriginElasticIp.AllocationId}
@@ -881,7 +881,7 @@ Resources:
 
                 yum -y install git
 
-                cd /root && git clone https://github.com/awslabs/immersive-media-refarch.git
+                cd /root && git clone https://github.com/jrfoehn/immersive-media-refarch.git
 
                 REGION=${AWS::Region} INGRESSBUCKET=${transcodingIngressBucket} CLOUDWATCHLOGSGROUP=${cloudWatchLogsGroup}
                 ENI_ID=${primaryOriginElasticNetworkInterface} ALLOCATION_ID=${primaryOriginElasticIp.AllocationId}
@@ -1202,7 +1202,7 @@ Resources:
 
                 yum -y install git
 
-                cd /root && git clone https://github.com/awslabs/immersive-media-refarch.git
+                cd /root && git clone https://github.com/jrfoehn/immersive-media-refarch.git
 
                 REGION=${AWS::Region} ECS_CLUSTER=${testStreamEcsCluster} WAITCONDITIONHANDLE="${testStreamSpotFleetWaitConditionHandle}"
                 bash /root/immersive-media-refarch/user-data/user-data-test.sh
@@ -1236,7 +1236,7 @@ Resources:
 
                 yum -y install git
 
-                cd /root && git clone https://github.com/awslabs/immersive-media-refarch.git
+                cd /root && git clone https://github.com/jrfoehn/immersive-media-refarch.git
 
                 REGION=${AWS::Region} ECS_CLUSTER=${testStreamEcsCluster} WAITCONDITIONHANDLE="${testStreamSpotFleetWaitConditionHandle}"
                 bash /root/immersive-media-refarch/user-data/user-data-test.sh
@@ -1458,7 +1458,7 @@ Resources:
 
                 yum -y install git
 
-                cd /root && git clone https://github.com/awslabs/immersive-media-refarch.git
+                cd /root && git clone https://github.com/jrfoehn/immersive-media-refarch.git
 
                 REGION=${AWS::Region} TRANSCODINGINGRESSBUCKET=${transcodingIngressBucket} TRANSCODINGEGRESSBUCKET=${transcodingEgressBucket}
                 TRANSCODINGQUEUE=${transcodingQueue} CLOUDWATCHLOGSGROUP=${cloudWatchLogsGroup}
@@ -1496,7 +1496,7 @@ Resources:
 
                 yum -y install git
 
-                cd /root && git clone https://github.com/awslabs/immersive-media-refarch.git
+                cd /root && git clone https://github.com/jrfoehn/immersive-media-refarch.git
 
                 REGION=${AWS::Region} TRANSCODINGINGRESSBUCKET=${transcodingIngressBucket} TRANSCODINGEGRESSBUCKET=${transcodingEgressBucket}
                 TRANSCODINGQUEUE=${transcodingQueue} CLOUDWATCHLOGSGROUP=${cloudWatchLogsGroup}
